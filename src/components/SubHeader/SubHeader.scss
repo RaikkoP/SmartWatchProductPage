@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.subHeader {
+    height: 420px;
+    display: flex;
+
+    &--filler {
+        width: 25%;
+        background-color: orange;
+        height: 100%;
+
+        &-inner {
+            padding: 20px;
+        }
+
+        &-name {
+            font-family: "Monoton";
+            text-align: center;
+            font-weight: 200;
+            font-size: 36px;
+            margin: 60px 0;
+        }
+    }
+
+    &--content {
+        width: 75%;
+        padding-top: 20px;
+        background-color: rgb(226, 233, 239);
+        display: flex;
+        align-items: flex-start;
+
+        &-lists {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    &--image {
+        height: 100%;
+        align-items: flex-start;
+    }
+}
+
+.subHeader__section {
+    flex: 1 1 40%;
+    padding: 10px;
+    height: auto;
+    flex-wrap: wrap;
+
+    &--title {
+        font-size: 18px;
+        font-weight: 200;
+        margin: 0 0 10px 0;
+    }
+
+    &--list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &--list-item {
+        margin: 0 0 5px 0;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+.shapes {
+    display: flex;
+
+    &--left {
+        justify-content: flex-start;
+    }
+
+    &--right {
+        justify-content: flex-end;
+    }
+
+    &__circle {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50%
+    }
+
+    &__triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid red;
+    }
+}

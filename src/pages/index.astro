@@ -1,10 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../modules/Header/Header';
+
+const subHeaderΝavData: {name: string; link: string;}[][] = [[{name:'CMF PHONE 1', link : '#'}], [{name:'WATCH PRO 2', link : '#'}, {name:'WATCH PRO', link : '#'}] , [{name:'BUDS PRO 2', link : '#'}, {name:'BUDS PRO', link : '#'}, {name:'BUDS', link : '#'}, {name:'NECKBAND PRO', link : '#'}] , [{name:'POWER 65W GaN', link : '#'}]];
+const subHeaderTitles: string[] = ['01 / PHONES', '02 / WATCHES', '03 / AUDIO', '04 / ACCESSORIES'];
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Header/>
+		<Header hasSubHeader={true} subHeaderTitles={subHeaderTitles} subHeaderItems={subHeaderΝavData}/>
 	</main>
 </Layout>
